@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if (($_SESSION['flag'])==-1)
-header("Location:welcome.html");
+header("Location:index.html");
 else
 {
 }

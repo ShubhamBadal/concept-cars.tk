@@ -79,7 +79,7 @@ echo "You entered username as '".$un."' and password as '".$pw."'<br><br>";
 
 echo ' 
 <html><center>
-<a href="http://www.concept-cars.tk/welcome.html"><img src="../images/images_wel/loginbutton.png"></a>
+<a href="http://www.concept-cars.tk/index.html"><img src="../images/images_wel/loginbutton.png"></a>
 </center></html>
 ';
 
