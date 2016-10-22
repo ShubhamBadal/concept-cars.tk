@@ -1,0 +1,118 @@
+<html>
+<head>
+		<meta name="concept cars" content="concept cars - the cars of future" charset="utf-8">
+  		<title>Concept Cars</title>
+		
+		<!-- Attach our CSS -->
+	  	<link rel="stylesheet" href="css/orbit.css">
+        <link rel="stylesheet" href="css/welcome.css">
+        
+        <link rel="icon" type="image/png" href="images/images_icons/favicon.gif">
+	  	
+		<!-- Attach necessary JS -->
+		<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.orbit-1.2.3.min.js"></script>	
+		
+		<!-- Run the plugin -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#featured').orbit();
+			});
+		</script>
+        
+        <script>
+		function myFunction()
+		{
+		alert("To enter the website you have to login first!");
+		}
+		</script>
+
+</head>
+
+
+<body>
+<center>
+	
+	<div class="container">
+    
+    	<div id="head">
+        <a href="#login"><img src="images/images_wel/login.png"></a>
+        <img src="images/images_wel/cc.png" onClick="myFunction()">
+        <a href="#register"><img src="images/images_wel/sign.png"></a>
+        </div>
+        
+		<div id="featured"> 
+			<img src="images/images_welcome/a.jpg" />
+			<img src="images/images_welcome/b.jpg" />
+			<img src="images/images_welcome/c.jpg"  />
+            <img src="images/images_welcome/d.jpg"  />
+            <img src="images/images_welcome/e.jpg" />
+			<img src="images/images_welcome/f.jpg"  />
+            <img src="images/images_welcome/g.jpg"  />
+		</div>
+        
+        <h1> Enter to see a mesmerizing collection of concept cars!</h1>
+       	
+
+        <div id="login">
+        <h3>Login Here (for existing users)</h3>
+        <form action="php/loggedin.php" method="post">
+		Username: <input type="text" name="username"><br>
+		Password: <input type="password" name="pwd"><br><br>
+		<input type="submit" value="Login">
+        <input type="submit" value="Forgot Password">
+		</form>
+        
+        
+        <h3>Public Login Details</h3>
+        
+        Public Username : publicuser<br>
+        Public Password : publicpass
+        
+        <p>Use this username & password if you don't want to sign up!<br>
+        (Note : for temporary access only)</p>
+        </div>
+        
+        
+        <div id="register">
+        <h3>Sign Up Here (for new users)</h3>
+        <form action="registered.php" method="post">
+		Full Name	: <input type="text" name="name"><br>
+        E-Mail ID	: <input type="text" name="mail"><br>
+        Username	: <input type="text" name="user"><br>
+		Password	: <input type="password" name="pass"><br><br>
+        
+        Select Sex	:	<input type="radio" name="sex" value="male">Male
+		<input type="radio" name="sex" value="female">Female<br><br>        
+        <input type="checkbox" name="agree" value="true"> I agree that all provided information is true.<br>
+		<input type="checkbox" name="agree" value="ownacar"> I have a car (check if you already own a car).<br><br>
+        <input type="submit" value="Submit">
+		</form>
+        </div>
+        
+        <div id="footer">
+        
+    <h2>
+    © Copyright 2013 | <a href="http://www.concept-cars.tk">www.concept-cars.tk</a> | All Rights Reserved.
+    </h2>
+    <a id="hook" href="http://www.facebook.com/gt.concept">
+    <img title="Facebook Page" class="footicon" src="images/images_icons/fb.png" height=50px width=50px alt="facebook"></a>
+    <a href="http://www.twitter.com/cars">
+    <img title="Twitter" class="footicon" src="images/images_icons/tw.png" height=50px width=50px alt="twitter"></a>
+    <a href="mailto:shubham.badal@live.com">
+    <img title="Email & Feedback" class="footicon" src="images/images_icons/mail.png" height=60px width=60px alt="Email"></a>
+    <a href="http://www.youtube.com/user/autocar">
+    <img title="YouTube Channel" class="footicon" src="images/images_icons/youtube.png" height=50px width=50px alt="youtube"></a>
+    <a href="http://plus.google.com/112107230844134280632">
+    <img title="Google Plus" class="footicon" src="images/images_icons/gplus.png" height=50px width=50px alt="gplus"></a>
+    
+    <h2>
+    Designed by <a href="http://shubhambadal.wordpress.com">Shubham Badal</a> | NITK Surathkal
+    <br>
+    </h2>
+    </div>
+        
+	</div>	
+</center>
+</body>
+</html>
